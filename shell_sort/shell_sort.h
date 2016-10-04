@@ -7,4 +7,17 @@
 
 #include "../sort_method.h"
 
+class ShellSort : public SortMethod {
+public:
+    void Sort(int *, int) override ;
+
+protected:
+    const char * sort_method_name() override {
+        return sort_method_name_;
+    }
+
+private:
+    const char * sort_method_name_ = "Shell Sort";
+};
+
 #endif //SORT_REVIEW_SHELL_SORT_H
