@@ -9,7 +9,7 @@
 
 class ShellSort : public SortMethod {
 public:
-    void Sort(int *, int) override ;
+    void Sort(int *, const int) override ;
 
 protected:
     const char * sort_method_name() override {

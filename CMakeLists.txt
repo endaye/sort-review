@@ -3,5 +3,5 @@ project(sort_review)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
 
-set(SOURCE_FILES main.cpp shell_sort/shell_sort.cpp shell_sort/shell_sort.h sort_method.cpp sort_method.h)
+set(SOURCE_FILES main.cpp shell_sort/shell_sort.cpp shell_sort/shell_sort.h sort_method.cpp sort_method.h quick_sort/quick_sort.cpp quick_sort/quick_sort.h )
 add_executable(sort_review ${SOURCE_FILES})

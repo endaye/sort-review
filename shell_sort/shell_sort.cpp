@@ -5,7 +5,7 @@
 #include "shell_sort.h"
 
 /* shellsort: sort input_array[0]...intput_array[size-1] into increasing order */
-void ShellSort::Sort(int * input_array, int input_array_size) {
+void ShellSort::Sort(int * input_array, const int input_array_size) {
     int gap, i, j, temp;
 
     // 最外层的for语句控制两个被比较元素之间的距离，从n/2开始，逐渐进行对折，直到距离为0

@@ -7,9 +7,9 @@
 
 class SortMethod {
 public:
-    virtual void Sort(int *, int) {};
-    void OutputOriginal(int *, int);
-    void OutputResult(int *, int);
+    virtual void Sort(int *, const int) {};
+    void OutputOriginal(const int *, const int) const;
+    void OutputResult(const int *, const int);
 
 protected:
     /*
