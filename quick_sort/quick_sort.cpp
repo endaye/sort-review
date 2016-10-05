@@ -52,20 +52,3 @@ void QuickSort::SwapTwoElementsInAnArray(int * input_array,
     input_array[first_index] = input_array[second_index];
     input_array[second_index] = temp;
 }
-
-/*
- *  0   1   2   3   4   5   6   7   8   9  10  11  12
- * 89, 12, 22,  9, 18,  3, 33, 12, 34,  7, 91, 22, 15
- *  0                       6                      12
- *  l                     (l+r)/2                   r
- * 33,                     89,
- * la
- *      i
- *     la  la  la  la  la  12, 89, 34,
- *                         la   7, 34, 89, 91,
- *                             la  22, 89, 91, 34
- *                                 la  15, 91, 34, 89
- *                                     la
- * 15,                                 33,
- * 15, 12, 22,  9, 18,  3, 12,  7, 22, 33, 91, 34, 89
- */
